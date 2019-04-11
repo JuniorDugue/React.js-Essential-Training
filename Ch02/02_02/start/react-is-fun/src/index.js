@@ -7,17 +7,10 @@ var style = {
   fontFamily: 'Arial'
 }
 
-const title = React.createElement(
-  'ul',
-  {id: 'title', className: 'header', style: style},
-  React.createElement(
-    'li',
-    {},
-    'item on our list'
-  )
-)
-
 ReactDOM.render(
-  title, 
+  <div style={style}>
+    <h1 id="heading-element">Hello world!</h1>
+    <p>We're glad you're here!</p>
+  </div>,
   document.getElementById('root')
 )
